@@ -6,8 +6,9 @@ template<typename T> class LinkedList
 {
 public:
 	LinkedList();
+	LinkedList(const LinkedList &list) : m_head(nullptr), m_total(0) { *this = list; }
+	LinkedList& operator=(const LinkedList &list);
 	~LinkedList();
-	//Todo: Copy constructor, assignment operator
 	/********************************************************************/
 	/* Adds the given object through LIFO principle to the list */
 	/* Input: data, Output: Boolean - true if successful
@@ -86,4 +87,21 @@ template <typename T>
 int LinkedList<T>::getSize() const
 {
 	return m_total;
+}
+
+template<typename T>
+LinkedList<T>& LinkedList<T>::operator=(const LinkedList<T> &list)
+{
+	if (&list == this)
+		return *this;
+	   	 
+	clear();
+	while (list.m_head)
+	{
+		add(list.m_head->m_data);
+		list.m_head = list.m_head->m_next;
+	}
+
+
+	return *this;
 }

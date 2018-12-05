@@ -24,6 +24,9 @@
     <ClInclude Include="LinkedList.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
+    <ClInclude Include="DLinkedList.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
