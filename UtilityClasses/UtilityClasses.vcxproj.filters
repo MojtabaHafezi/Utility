@@ -27,12 +27,18 @@
     <ClInclude Include="DLinkedList.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
+    <ClInclude Include="MemoryLeakCheck.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
     <ClCompile Include="UtilityClasses.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="MemoryLeakCheck.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
   </ItemGroup>
