@@ -62,11 +62,11 @@ std::istream& operator>>(std::istream &in,  Point &p)
 		//remove ",", " ", "(" from substring beg
 		beg.erase(std::remove(beg.begin(), beg.end(), ','), beg.end());
 		beg.erase(std::remove_if(beg.begin(), beg.end(), isspace), beg.end());
-		beg.erase(std::remove(beg.begin(), beg.end(), '('));
+		beg.erase(std::remove(beg.begin(), beg.end(), '('), beg.end());
 
 		//remove ")", " ", ","
-		end.erase(std::remove(end.begin(), end.end(), isspace));
-		end.erase(std::remove(end.begin(), end.end(), ')'));
+		end.erase(std::remove_if(end.begin(), end.end(), isspace), beg.end());
+		end.erase(std::remove(end.begin(), end.end(), ')'), beg.end());
 		end.erase(std::remove(end.begin(), end.end(), ','));
 
 		float x = float(std::stof(beg));

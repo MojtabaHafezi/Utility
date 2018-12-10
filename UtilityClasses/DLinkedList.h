@@ -1,4 +1,5 @@
 #pragma once
+#include "pch.h"
 //double linked list with Node struct inside
 template<typename T> class DLinkedList
 {

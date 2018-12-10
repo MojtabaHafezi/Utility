@@ -1,4 +1,5 @@
 #pragma once
+#include "pch.h"
 class MemoryLeakCheck
 {
 	static int s_objectCounter;

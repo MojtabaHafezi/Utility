@@ -1,5 +1,7 @@
 #pragma once
+#include "pch.h"
 #include "Node.h"
+#include <string>
 //SINGLE LINKED LIST
 
 template<typename T> class LinkedList

@@ -30,6 +30,15 @@
     <ClInclude Include="MemoryLeakCheck.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
+    <ClInclude Include="Point.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="MyException.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="FunctorsAndLambdas.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
@@ -39,6 +48,9 @@
       <Filter>Quelldateien</Filter>
     </ClCompile>
     <ClCompile Include="MemoryLeakCheck.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Point.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
   </ItemGroup>
